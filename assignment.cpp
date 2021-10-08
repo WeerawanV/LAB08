@@ -48,7 +48,7 @@ void init_star() //set up position star[]
 	}
 }
 
-void star_fall() //change position y of star 
+void star_fall()  
 {
 	int i;
 	for (i = 0; i < scount; i++) {
@@ -74,7 +74,7 @@ void clear_buffer()
 void fill_star_to_buffer()
 {
 	int i;
-	for (i = 0; i < scount; i++) { //declar position x,y * in array
+	for (i = 0; i < scount; i++) {
 		consoleBuffer[star[i].X + screen_x * star[i].Y].Char.AsciiChar = '*';
 		consoleBuffer[star[i].X + screen_x * star[i].Y].Attributes = 7;
 	}
@@ -159,7 +159,7 @@ int main()
 		clear_buffer();
 		fill_star_to_buffer();
 		fill_ship_to_buffer();
-		if (ship_hit_star()) { //hit 10 stars = true then play = false
+		if (ship_hit_star()) { 
 			play = false;
 		}
 		fill_buffer_to_console();
