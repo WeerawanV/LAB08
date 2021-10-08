@@ -9,7 +9,7 @@ HANDLE rHnd;
 HANDLE wHnd;
 DWORD fdwMode;
 COORD bufferSize = { screen_x,screen_y };
-COORD characterPos = { 0,0 }; //fill full screen
+COORD characterPos = { 0,0 }; 
 SMALL_RECT windowSize = { 0,0,screen_x - 1,screen_y - 1 };
 CHAR_INFO consoleBuffer[screen_x * screen_y];
 COORD star[scount];
